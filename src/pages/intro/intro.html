@@ -1,0 +1,64 @@
+<ion-content class="slides_content">
+
+  <ion-slides (ionSlideDidChange)="slideChanged()">
+
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-12>
+            <div class="outer">
+              <div class="inner">
+                <h3 class="txt">Make the reservation!</h3>
+              </div>
+              <div class="inner">
+                <lottie-animation-view [options]="lottieConfig" [width]="300" [height]="600" (animCreated)="handleAnimation($event)">
+                </lottie-animation-view>
+                <button color="white" type="button" ion-button block outline margin-bottom (click)="goNext(1)" class="btn_go_login">Next</button>
+              </div>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-12>
+            <div class="outer">
+              <div class="inner">
+                <h3 class="txt">Pay!</h3>
+              </div>
+              <div class="inner">
+                <lottie-animation-view [options]="lottieConfig2" [width]="300" [height]="600" (animCreated)="handleAnimation2($event)">
+                </lottie-animation-view>
+              </div>
+              <button color="white" type="button" ion-button block outline margin-bottom (click)="goNext(2)" class="btn_go_login">Next</button>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-12>
+            <div class="outer">
+              <div class="inner">
+                <h3 class="txt">Be Happy!</h3>
+              </div>
+              <div class="inner">
+                <lottie-animation-view [options]="lottieConfig3" [width]="300" [height]="600" (animCreated)="handleAnimation3($event)">
+                </lottie-animation-view>
+                <button color="white" type="button" ion-button block outline margin-bottom (click)="login()" class="btn_go_login">Got it!</button>
+              </div>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+
+  </ion-slides>
+
+</ion-content>

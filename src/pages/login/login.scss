@@ -1,0 +1,83 @@
+page-login {
+    
+    font-family: 'Cuprum', sans-serif;
+
+    .scroll-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+
+    .app_name{
+        font-family: 'Cuprum', sans-serif;
+        font-size: 2em;
+    }
+
+    form {
+        width: 100%;
+    }
+  
+        .input_login{
+            background-color: transparent;
+            width: 100%;
+            outline: none;
+            border-color: transparent;
+        }
+
+    .content {
+        background: linear-gradient(255deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+        background-size: 400% 400%;
+        font-family: 'Cuprum', sans-serif;
+    }    
+
+    .item-ios,
+    .item-md  {
+        background-color: color($colors, white-transparent, base);  
+        color:#fff;
+        font-family: 'Cuprum', sans-serif;
+    }
+
+    .footer-ios .toolbar-background-ios {
+        border-color: color($colors, white-transparent, base);  
+   
+    }
+      
+    .list-md[no-lines] .item-input:last-child {
+        border-width: 0;
+    }    
+
+    .blink {
+        -webkit-animation: Blink 1.5s linear infinite;
+        -moz-animation: Blink 1.5s linear infinite;
+        animation: Blink 1.5s linear infinite;
+    }
+
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: white !important;
+    }
+
+    @-webkit-keyframes Blink {
+        0% { opacity: 1; }
+        49% { opacity: 1; }
+        50% { opacity: 0; }
+        100% { opacity: 0; } 
+    }
+
+    @-moz-keyframes Blink {
+        0% { opacity: 1; }
+        49% { opacity: 1; }
+        50% { opacity: 0; }
+        100% { opacity: 0; } 
+    }
+
+    @keyframes Blink { 
+        0% { opacity: 1; }
+        49% { opacity: 1; }
+        50% { opacity: 0; }
+        100% { opacity: 0; } 
+    }      
+
+    
+}

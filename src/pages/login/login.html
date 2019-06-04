@@ -1,0 +1,38 @@
+<ion-content padding>
+
+  <h3 ion-text color="white" style="margin-bottom:22px;" margin-bottom>
+    <span class="app_name"> Your Travel </span>
+  
+  </h3>
+
+  <form autocomplete="off">
+
+    <ion-list no-lines>
+      <ion-item>
+        <input type="text" placeholder="Email, phone number or username" type="email" autocomplete="off" class="input_login" />
+      </ion-item>
+      <ion-item margin-top>
+        <input type="text" placeholder="Password" type="password" autocomplete="off"  class="input_login"/>
+      </ion-item>
+    </ion-list>
+
+    <button color="white" type="button" ion-button block outline margin-bottom (click)="login()">Log In</button>
+
+    <button color="white" type="button" ion-button block clear>
+      <h6>Forgot your login details? <strong><u>Get help signing in.</u></strong></h6>
+    </button>
+
+  </form>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="white-transparent" text-center>
+
+    <ion-buttons>
+      <button ion-button color="white">
+        <h6>Don't have an account? <strong><u>Sign up.</u></strong></h6>
+      </button>
+    </ion-buttons>
+
+  </ion-toolbar>
